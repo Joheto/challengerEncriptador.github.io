@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/Padlock.svg">       
+    </head>
+
+    <body>
+        <header>
+            <h1><img src="img/Logo.svg" alt="Logo de Alura"></h1>
+        </header>
+
+        <main>
+            <div class="container">
+                <section>
+                    <div class="box-left">
+                        <div class="reading">
+                            <textarea id="readText" placeholder="Ingrese su texto aqui"></textarea>
+                            <p id="msg-empty-section">-</p>
+                            <p id="msg-error"><img src="img/Info.svg" alt="Simbolo de Atencion">Solo letras minusculas y sin acento</p>
+                            <button id="btnEncrypt" class="btn-section">Encriptar</button>
+                            <button id="btnDecrypt" class="btn-section">Desencriptar</button>
+                        </div>
+                    </div>
+                </section>
+                <aside>
+                    <div class="box-right">
+                        <div id="result-on">
+                            <textarea id="resultText" readonly></textarea>
+                            <p id="msg-empty-aside">-</p>
+                            <p id="msg-info"><img src="img/Info.svg" alt="Simbolo de Atencion">Texto copiado al portapapeles</p>
+                            <button id="btnCopy" class="btn-aside">Copiar</button>
+                        </div>
+                        <div id="result-off">
+                            <img src="img/Muñeco.svg" alt="Imagen de un muñeco">
+                            <h3>Ningun mensaje fue encontrado</h3>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <footer>
+            <p>Alura Challenger 1 Encriptador - Desarrollado por Jonathan H.T</p>
+            <a target="_blank" href="https://www.linkedin.com/in/jonathanht/"><img src="img/LinkedIn_Logo.svg" alt="Logo de LinkedIn"></a>
+            <a target="_blank" href="https://github.com/Joheto"><img src="img/Github_Logo.svg" alt="Logo de Github"></a>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
