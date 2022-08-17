@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Encriptador de Texto</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="img/Padlock.svg">       
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/Padlock.svg">
+    <script src="https://kit.fontawesome.com/6fdb411b24.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Encriptador de Texto</title>
+</head>
+    
+<body>
+    <header>
+        <h1><img src="img/Logo.svg" alt="Logo de Alura"></h1>
+    </header>
 
-    <body>
-        <header>
-            <h1><img src="img/Logo.svg" alt="Logo de Alura"></h1>
-        </header>
-
-        <main>
-            <div class="container">
-                <section>
-                    <div class="box-left">
-                        <div class="reading">
-                            <textarea id="readText" placeholder="Ingrese su texto aqui"></textarea>
-                            <p id="msg-empty-section">-</p>
-                            <p id="msg-error"><img src="img/Info.svg" alt="Simbolo de Atencion">Solo letras minusculas y sin acento</p>
-                            <button id="btnEncrypt" class="btn-section">Encriptar</button>
-                            <button id="btnDecrypt" class="btn-section">Desencriptar</button>
-                        </div>
+    <main>
+        <div class="container">
+            <section>
+                <div class="boxLeft">
+                    <div class="reading">
+                        <textarea id="readText" placeholder="Ingresa tu texto aqui"></textarea>
+                        <p id="msg-error"><img src="img/Info.svg" alt="Simbolo de Atencion">Solo letras minusculas y sin acento</p>
+                        <button id="btnEncrypt" class="btn-section" onclick="encriptar()">Encriptar</button>
+                        <button id="btnDecrypt" class="btn-section" onclick="desencriptar()">Desencriptar</button>
                     </div>
-                </section>
-                <aside>
-                    <div class="box-right">
-                        <div id="result-on">
-                            <textarea id="resultText" readonly></textarea>
-                            <p id="msg-empty-aside">-</p>
-                            <p id="msg-info"><img src="img/Info.svg" alt="Simbolo de Atencion">Texto copiado al portapapeles</p>
-                            <button id="btnCopy" class="btn-aside">Copiar</button>
-                        </div>
-                        <div id="result-off">
-                            <img src="img/Muñeco.svg" alt="Imagen de un muñeco">
-                            <h3>Ningun mensaje fue encontrado</h3>
-                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-                        </div>
+                </div>
+            </section>
+            <aside>
+                <div class="boxRight">
+                    <div class="boxOn">
+                        <img id="imgRight" src="img/Muñeco.svg" alt="Imagen de Muñeco">
+                        <h3 id="texto1">Ningun mensaje fue encontrado</h3>                        
+                        <textarea id="resultText" readonly>Ingrese el texto que desees encriptar o desencriptar</textarea>
+                        <button id="copiar" class="copy" onclick="copy()">Copiar</button>
                     </div>
-                </aside>
-            </div>
-        </main>
+                </div>
+            </aside>
 
-        <footer>
-            <p>Alura Challenger 1 Encriptador - Desarrollado por Jonathan H.T</p>
-            <a target="_blank" href="https://www.linkedin.com/in/jonathanht/"><img src="img/LinkedIn_Logo.svg" alt="Logo de LinkedIn"></a>
-            <a target="_blank" href="https://github.com/Joheto"><img src="img/Github_Logo.svg" alt="Logo de Github"></a>
-        </footer>
+        </div>
+    </main>
 
-        <script src="script.js"></script>
-    </body>
+    <footer>
+        <p>Alura challenger 1 Encriptador - Desarrollado por Jonathan H.T.</p>
+        <a target="_blank" href="https://www.linkedin.com/in/jonathanht/"><img src="img/LinkedIn_Logo.svg" alt="Logo de LinkedIn"></a>
+        <a target="_blank" href="https://github.com/Joheto"><img src="img/Github_Logo.svg" alt="Logo de Github"></a>
+    </footer>
+
+    
+</body>
 </html>
